@@ -214,7 +214,6 @@ function create_config( )
     "antitag",
     "gps",
     "leave",
-    "block",
     "tagall",
     "arabic_lock",
     "welcome",
@@ -223,14 +222,13 @@ function create_config( )
     "chat",
     "Debian_service",
     "sudoers",
-    "add_admin",
+    "addmin",
     "anti_spam",
     "add_bot",
     "owners",
     "set",
     "get",
     "broadcast",
-    "download_media",
     "invite",
     "all",
     "leave_ban",
@@ -239,14 +237,18 @@ function create_config( )
     "nerkh",
     "echo",
     "linkpv",
-    "antifosh",
     "calculator",
-    "setrank",
+    "info",
     "tex",
     "map",
-    "share-contact",
     "qr",
-    "on-off"
+    "on-off",
+    "time",
+    "spammer",
+    "music",
+    "getplug",
+    "dictionary"
+    
     
     },
     sudo_users = {135693512},--Sudo users
@@ -485,7 +487,8 @@ ______________________________
 💬 راهنمای ربات (همین متن)
 !help
 ______________________________
-برای دیدن مشخصات کلیه خود دستور (اینفو) را بفرستید ⭐️
+برای دیدن مشخصات کلی خود ⭐️
+!info
 ______________________________
 ⚠️ شما ميتوانيد از ! و / استفاده کنيد. 
 
