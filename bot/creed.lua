@@ -204,24 +204,23 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "onservice",
-    "inrealm",
+ "inrealm",
     "ingroup",
     "inpm",
     "banhammer",
-    "Boobs",
     "Feedback",
     "lock_join",
     "antilink",
     "antitag",
     "gps",
-    "auto_leave",
+    "leave",
     "block",
     "tagall",
     "arabic_lock",
     "welcome",
     "google",
     "sms",
+    "chat",
     "Debian_service",
     "sudoers",
     "add_admin",
@@ -234,21 +233,33 @@ function create_config( )
     "download_media",
     "invite",
     "all",
-    "leave_ban"
+    "leave_ban",
+    "danestani",
+    "joke",
+    "nerkh",
+    "echo",
+    "linkpv",
+    "antifosh",
+    "calculator",
+    "setrank",
+    "tex",
+    "map",
+    "share-contact",
+    "qr",
+    "on-off"
+    
     },
-    sudo_users = {118682430},--Sudo users
+    sudo_users = {135693512},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Creed bot 2.3
     
      Hello my Good friends 
      
-    ‼️ this bot is made by : @creed_is_dead
+    ‼️ this bot is made by : @DARK_BOYS_ADMIN
    〰〰〰〰〰〰〰〰
    ߔࠀ   our admins are : 
-   ߔࠀ   @sorblack_creed
-   ߔࠀ   @amircc_creed
-   ߔࠀ   @aria_creed
+   ߔࠀ   @DARK_BOYS_ADMIN
    〰〰〰〰〰〰〰〰
   ♻️ You can send your Ideas and messages to Us By sending them into bots account by this command :
    تمامی درخواست ها و همه ی انتقادات و حرفاتونو با دستور زیر بفرستین به ما
@@ -341,195 +352,145 @@ You Can user both "!" & "/" for them
 
 ]],
     help_text = [[
-bots Help for mods : Plugins
-
-Banhammer : 
-
-
-Help For Banhammer دستوراتی برای کنترل گروه
-
-!Kick @UserName or ID 
-شخصی را از گروه حذف کنید . همچنین با ریپلی هم میشه
-
-!Ban @UserName or ID
-برای بن کردن شخص اسفاده میشود . با ریپلی هم میشه
-
-
-!Unban @UserName
-برای آنبن کردن شخصی استفاده میشود . همچنین با ریپلی هم میشه
-
-For Admins :
-
-!banall ID
-برای بن گلوبال کردن از تمامی گروه هاست باید ای دی بدین با ریپلی هم میشه
-
-!unbanall ID
-برای آنبن کردن استفاده میشود ولی فقط با ای دی میشود
-
-〰〰〰〰〰〰〰〰〰〰
-2. GroupManager :
-
-!lock leave
-اگر کسی از گروه برود نمیتواند برگردد
-
-!lock tag
-برای مجوز ندادن به اعضا از استفاده کردن @  و #  برای تگ
-
-
-!Creategp "GroupName"
-you can Create group with this comman
-با این دستور برای ساخت گروه استفاده بکنید
-
-
-!lock member
-For locking Inviting users
-برای جلوگیری از آمدن اعضای جدید استفاده میشود
-
-
-!lock bots
-for Locking Bots invitation
-برای جلوگیری از ادد کردن ربا استفاده میشود
-
-
-!lock name
-To lock the group name for every bodey
-برای قفل کردن اسم استفاده میشود
-
-!setflood set the group flood control  
-تعداد اسپم را در گروه تعیین میکنید
-
-!settings
-Watch group settings
-تنظیمات فعلی گروه را میبینید
-
-!owner
-watch group owner
-آیدی سازنده گروه رو میبینید
-
-!setowner user_id
-You can set someone to the group owner‼️
-برای گروه سازنده تعیین میکنید 
-
+📝 ليست دستورات مدیریتی :
+_______________________________
+🚫 حذف کردن کاربر
+!kicK [یوزنیم/یوزر آی دی]
+______________________________
+🚫 بن کردن کاربر ( حذف برای همیشه )                                                                    
+!ban [یوزنیم/یوزر آی دی]
+______________________________
+🚫 حذف بن کاربر ( آن بن )
+!unban [یوزر آی دی]
+______________________________
+🚫 حذف خودتان از گروه
+!kickme
+______________________________
+ 👥 دريافت ليست مديران گروه
 !modlist
-catch Group mods
-لیست مدیران گروه را میگیرید
+______________________________
+👥 افزودن مدير برای گروه
+!promote [یوزنیم]
+______________________________
+👥 حذف کردن یک مدير
+!demote [یوزنیم]
+______________________________
+📃 توضيحات گروه
+!about
+______________________________
+📜 قوانين گروه
+!rules               
+______________________________
+🌅 انتخاب و قفل عکس گروه
+!setphoto
+______________________________
+🔖 انتخاب نام گروه
+!setname [نام مورد نظر]
+______________________________
+📜 انتخاب قوانين گروه
+!set rules <متن قوانین>
+______________________________
+📃 انتخاب توضيحات گروه
+!set about <متن مورد نظر>
+______________________________
+🔒 قفل اعضا ، نام گروه ، ربات و ...
 
-!lock adds 
-to lock commercial Breaks and Other group links in group
-از دادن لینک گروه یا سایت یا هرچیز دیگه توی گروه جلوگیری میکند .
+!lock [bots-member-flood-photo-name-tag-link-join-Arabic]
+______________________________
+🔓 باز کردن قفل اعضا ، نام گروه و ...
 
-!lock eng
-You cannot speak english in group
-از حرف زدن انگلیسی توی گروه جلوگیری میکند
-
-!lock settings
-To lock settings of group and unchange able
-برای قفل کردن تنظیمات گروه به کار میره
-
-!lock badw
-To lock using badwords in group
-برای جلوگیری از استفاده کردن حرف های رکیک استفاده میشود
-
-
-!lock join 
-to lock joining the group by link
-برای جلوگیری از وارد شدن به کروه با لینک
-
-
-!lock flood
-lock group flood
-از اسپم دادن در گروه جلوگیری کنید
-
-!unlock (bots-member-flood-photo-name-tag-link-join-Arabic)
-Unlock Something
-موارد بالا را با این دستور آزاد میسازید
-
-!rules  && !set rules
-TO see group rules or set rules
-برای دیدن قوانین گروه و یا انتخاب قوانین 
-
-!about or !set about
-watch about group or set about
-در مورد توضیحات گروه میدهد و یا توضیحات گروه رو تعیین کنید 
-
-!res @username
-see Username INfo
-در مورد اسم و ای دی شخص بهتون میده 
-
-!who
-Get Ids Chat
-همه ی ای دی های موجود در چت رو بهتون میده
-
-!log 
-get members id
-تمامی فعالیت های انجام یافته توسط شما و یا مدیران رو نشون میده
-
-!all
-Says every thing he knows about a group
-در مورد تمامی اطلاعات ثبت شده در مورد گروه میدهد
-
-
+!unlock [bots-member-flood-photo-name-tag-link-join-Arabic]
+______________________________
+📥 دريافت یوزر آی دی گروه يا کاربر
+!id
+______________________________
+⚙ دریافت تنظیمات گروه
+!settings
+______________________________
+📌 ساخت / تغيير لينک گروه
 !newlink
-Changes or Makes new group link
-لینک گروه رو عوض میکنه 
-
+______________________________
+📌 دريافت لينک گروه
 !link
-gets The Group link
-لینک گروه را در گروه نمایش میده
-
+______________________________
+ فرستادن لینک در پی وی 
 !linkpv
-sends the group link to the PV
-برای دریافت لینک در پیوی استفاده میشه 
-〰〰〰〰〰〰〰〰
-Admins :
+______________________________
+🛃 انتخاب مدير اصلی گروه
+!setowner [یوزر آی دی]
+______________________________
+🔢 تغيير حساسيت ضد اسپم
+!setflood [5-20]
+______________________________
+✅ دريافت ليست اعضا گروه
+!who
+______________________________
+✅ دريافت آمار در قالب متن
+!stats
+______________________________
+〽️ سيو کردن يک متن
+!save [value] <text>
+______________________________
+〽️ دريافت متن سيو شده
+!get [value]
+______________________________
+❌ حذف قوانين ، مديران ، اعضا و ...
+!clean [modlist|rules|about|member]
+______________________________
+♻️ دريافت يوزر آی دی یک کاربر
+!res [یوزنیم]
+______________________________
+🚸 دريافت گزارشات گروه
+!log
+______________________________
+🚸 دريافت ليست کاربران بن شده
+!banlist
+______________________________
+🚫 جلو گیری از گذاشتن  هر نوع لینکی
+!lock adds
+______________________________
+❌جلو گیری از استفاده ی  # و @
+!lock tag
+______________________________
+جلو گیری از انگلیسی حرف زدن 
+!lock eng
+______________________________
+🔃کسی که از گروه میرود بر نگردد 
+!lock leave
+______________________________
+📌 وارد شدن شخصی به گروه با لینک
+!lock join
+______________________________
+🌀 تکرار متن مورد نظر شما
+!echo [متن]
+______________________________
+🃏 ساخت متن نوشته
+!tex [متن]
+______________________________
+👀 سرچ کردن در گوگل
+!src [متن]
+______________________________
+⌨ انجام محاسبات ریاضی
+!calc 2+8
+______________________________
+🌐تگ کردن همه ی افراد گروه
+!tagall [متن]
+______________________________
+ 💸قیمت ساخت گروه
+!nerkh
+______________________________
+📢 ارتباط با پشتیبانی ربات
+!feedback [متن پیام]
+______________________________
+💬 راهنمای ربات (همین متن)
+!help
+______________________________
+برای دیدن مشخصات کلیه خود دستور (اینفو) را بفرستید ⭐️
+______________________________
+⚠️ شما ميتوانيد از ! و / استفاده کنيد. 
 
-!add
-to add the group as knows
-برای مجوز دادن به ربات برای استفاده در گروه
-
-
-!rem
-to remove the group and be unknown
-برای ناشناس کردن گروه برای ربات توسط مدیران اصلی
-
-!setgpowner (Gpid) user_id
-For Set a Owner of group from realm
- برای تعیین سازنده ای برای گروه  از گروه مادر
-
-!addadmin [Username]
-to add a Global admin to the bot
-برای ادد کردن ادمین اصلی ربات
-
-
-!removeadmin [username]
-to remove an admin from global admins
-برای صلب ادمینی از ادمینای اصلی
-
-!sms [id] (text)
-To send a message to an account by his/her ID
-برای فرستادن متنی توسط ربات به شخصی با ای دی اون
-
-
-〰〰〰〰〰〰〰〰〰〰〰
-3.!stats
-To see the group stats
-برای دیدن آمار گروه 
-
-〰〰〰〰〰〰〰〰
-4. Feedback
-!feedback (text)
-To send your ideas to the Moderation group
-برای فرستادن انتقادات و پیشنهادات و حرف خود با مدیر ها استفاده میشه
-
-〰〰〰〰〰〰〰〰〰〰〰
-5. Tagall
-!tagall (text)
-To tags the every one and sends your message at bottom
-تگ کردن همه ی اعضای گروه و نوشتن پیام شما زیرش
-
-
-You Can user both "!" & "/" for them
-می توانید از دو شکلک !  و / برای دادن دستورات استفاده کنید
+†eℓeωiɩ∂ ↭ ßo†
+______________________________
 
 ]]
 
